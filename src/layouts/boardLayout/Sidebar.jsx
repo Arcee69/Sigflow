@@ -27,7 +27,7 @@ export default function Sidebar() {
       {
           title: "Events",
           children: false,
-          itemId: '/events',
+          itemId: '/event',
           icon: () => (
             <img src={events} alt="icon" />
           ),
