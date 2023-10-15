@@ -14,7 +14,11 @@ export default {
       primary: "#32D583",
 
       white: "#fff",
-      black:  "#000"
+
+      BLACK: {
+        _100: "#000",
+        _200: "#101828"
+      }
     },
     
   },
