@@ -78,14 +78,14 @@ export default function Sidebar() {
           src={logo}
           alt="logo"
           loading="lazy"
-          className=" z-30 cursor-pointer" //h-[41px] w-[45px]
+          className=" z-30 cursor-pointer" //h-[41px] w-[45px] -[#101828]
           onClick={() => navigate("/dashboard")}
         />
  
       </div>
       <div className="px-[20%]">
-        <button className="flex justify-between bg-[#f6f6f6] w-[188px] rounded-lg p-1 items-center ">
-          <p className="text-left text-BLACK-_100 font-bold">Sigflow</p>
+        <button className="flex justify-between bg-[#E0E0E0] w-[188px] rounded-lg p-2 items-center ">
+          <p className="text-left text-[#101828] text-sm font-bold">Sigflow</p>
           <img src={selector} alt="Selector" />
         </button>
 

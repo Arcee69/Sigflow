@@ -5,10 +5,10 @@ import Background from "../../assets/icons/login-background.svg"
 
 const AuthLayout = () => {
   return (
-    <div className='overflow-x-hidden'>
+    // <div className=''>
       <div
           style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat"}}
-          className='w-full lg:w-full opacity-80' 
+          className='w-full h-screen opacity-80 overflow-x-hidden' 
           loading="lazy"
       >
         <div>
@@ -18,7 +18,7 @@ const AuthLayout = () => {
           <Outlet />
         </div>
       </div>
-    </div>
+    // </div>
   )
 }
 

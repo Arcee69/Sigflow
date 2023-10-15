@@ -50,7 +50,7 @@ const columns = [
         accessor: "status" 
     },
     { 
-        Header: "", 
+        Header: "Action", 
         accessor: "action" 
     },
   ]
@@ -88,7 +88,7 @@ const rows = tableData.map((items) => ({
 
 const Dashboard = () => {
   return (
-    <div className='p-8 md:p-4'>
+    <div className='p-8 md:p-4 mt-2'>
         <div className='flex flex-col md:flex-row md:justify-between gap-2 md:gap-0 md:items-center'>
             <p className='text-[20px] text-[#101828] font-bold'>Transformation</p>
             <div className='flex gap-4'>
