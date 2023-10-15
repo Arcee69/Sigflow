@@ -39,8 +39,8 @@ const Login = () => {
 
 
   return (
-    <div className='mb-5 '>
-        <div className='w-full md:w-[480px] h-[580px] rounded-lg border-2 flex flex-col border-solid border-[#fafafa] p-8 '>
+    <div className='mb-5 bg-white '>
+        <div className='w-full md:w-[480px] h-[580px] rounded-lg border flex flex-col border-solid border-[#E6E7EC]  p-8 '>
             <div className='flex flex-col justify-center gap-1 items-center'>
                 <p className="text-xl font-medium text-[#101828]">Welcome back!</p>
                 <p className='text-[#828282] text-sm'>Sign in to access your account</p>

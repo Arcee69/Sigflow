@@ -12,6 +12,7 @@ import PaginationControlled from "./Pagination";
 // import Button from "./Button";
 import emptyIllustration from "../assets/icons/emptyIllustration.svg";
 import SearchBar from "./SearchBar";
+import { Divider } from "@mui/material";
 // import Spinner from "./Spinner";
 
 const Table2 = ({
@@ -115,11 +116,11 @@ const Table2 = ({
     } else {
       return (
         <>
-          <tbody className="w-full" {...getTableBodyProps()}>
+          <tbody className="w-full " {...getTableBodyProps()}>
             {rows.map((row, i) => {
               prepareRow(row);
               return (
-                <Fragment key={i}>
+                <Fragment key={i} >
                   <tr
                     key={row.id}
                     className="table-style"
@@ -127,17 +128,19 @@ const Table2 = ({
                   >
                     {row.cells.map((cell, i) => {
                       return (
-                        <Fragment key={i}>
+                        <Fragment key={i} >
                           <td
                             key={row.id}
-                            className="p-4"
+                            className="px-4 border-t-0 border-l-0 border-r-0 border-[#E6E7EC] border border-solid"
                             {...cell.getCellProps()}
                           >
                             {cell.render("Cell")}
+                          
                           </td>
                         </Fragment>
                       );
                     })}
+                    
                   </tr>
                 </Fragment>
               );
@@ -151,20 +154,21 @@ const Table2 = ({
   return (
     <div className="w-full bg-white overflow-x-auto rounded-xl whitespace-nowrap">
       {children && <div className="w-full px-2 pb-6">{children}</div>}
+      
       {
         handleSearch &&
         <div className="p-4 rounded">
           <SearchBar readOnly={readOnly} placeholder={placeholder} handleSearch={handleSearch} value={value} ifFilter={ifFilter} FilterComponent={FilterComponent} filterComponentProps={filterComponentProps} showExport={ifExport} />
         </div>
       }
-      <table className="w-full border-spacing-y-4 border-separate" {...getTableProps()}>
+      <table className="w-full border-spacing-y-4  border-separate" {...getTableProps()}>
         <thead className="w-full">
           {headerGroups.map((headerGroup, id) => (
             <tr key={id} className="table-style" {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column, id) => (
                 <th
                   key={id}
-                  className="p-4 text-left font-normal text-sm text-[#949494] text-base "
+                  className="p-4 text-left font-medium text-sm text-[#828282] text-base "
                   {...column.getHeaderProps()}
                 >
                   {column.render("Header")}
@@ -174,9 +178,10 @@ const Table2 = ({
           ))}
         </thead>
         {renderItem()}
+        
       </table>
       {!removePaginationAndFiltering && data.length > 0 && !isLoading && (
-        <div className="flex justify-end py-3 rounded-[10px]">
+        <div className="flex justify-start py-3 mt-[15%] rounded-[10px]">
           <PaginationControlled
             handlePaginationChange={handlePaginationChange}
             totalNumberOfPages={totalNumberOfPages}

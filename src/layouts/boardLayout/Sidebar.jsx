@@ -13,6 +13,8 @@ import transformation from "../../assets/icons/transformation.svg";
 import account from "../../assets/icons/account.svg";
 import settings from "../../assets/icons/settings.svg";
 import help from "../../assets/icons/help.svg";
+import selector from "../../assets/icons/chevron-selector.svg";
+import { Divider } from "@mui/material";
 
 
 
@@ -82,7 +84,10 @@ export default function Sidebar() {
  
       </div>
       <div className="px-[20%]">
-        <button className=" bg-[#f6f6f6] w-[188px] rounded-lg p-1 text-left text-BLACK-_100 font-bold">Sigflow</button>
+        <button className="flex justify-between bg-[#f6f6f6] w-[188px] rounded-lg p-1 items-center ">
+          <p className="text-left text-BLACK-_100 font-bold">Sigflow</p>
+          <img src={selector} alt="Selector" />
+        </button>
 
       </div>
       <div className="w-full">
@@ -105,7 +110,7 @@ export default function Sidebar() {
                 }))}
           />
         </div>
-        <hr />
+        <Divider flexItem="vertical" className="text-[#828282]" />
 
         <div className="flex flex-col gap-4 px-[20%] py-[12%] mt-[5%]">
           <div className="flex gap-4 ">

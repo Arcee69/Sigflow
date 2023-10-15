@@ -16,10 +16,10 @@ export default function BoardLayout() {
           <Sidebar />
         </div>
         <div className="lg:w-[80%] w-full h-full">
-          <header className="sticky top-0 border-none h-[76px] z-50 bg-[#fff] xl:px-6 lg:px-4 md:px-2 px-2">
+          <header className="sticky top-0 border-[#E6E7EC] border border-t-0 border-l-0 border-r-0 border-solid h-[76px] z-50 bg-[#fff] xl:px-6 lg:px-4 md:px-2 px-2">
             <Header setOpenMobileSidebar={setOpenMobileSidebar} />
           </header>
-          <main className="h-auto bg-[#F8F8F8] "> {/* p-[2%]  */}
+          <main className="h-auto bg-[#fff] "> {/* p-[2%]  */}
             <Outlet />
           </main>
         </div>

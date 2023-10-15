@@ -54,11 +54,11 @@ export default function TableMenu({ options, action }) {
           horizontal: 'right',
         }}
       >
-        <div className='py-4 w-64 rounded'>
+        <div className='py-0 w-[179px] rounded'>
           {options.filter(op => op !== null).map((option) => (
             <p
               key={option}
-              className="px-6 py-3 cursor-pointer hover:bg-[#F8F8F8] font-poppins"
+              className="px-3 py-3 cursor-pointer hover:bg-[#F8F8F8] font-poppins"
               onClick={() => onPerformAction(option)}
             >
               {option}

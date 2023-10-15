@@ -32,7 +32,7 @@ export default function Header({ setOpenMobileSidebar }) {
   const navigate = useNavigate()
 
   return (
-    <div className="w-full h-full bg-[#fff] flex justify-between items-center">
+    <div className="w-full h-full bg-[#fff]  flex justify-between items-center">
       <div className="flex gap-3">
         <img
           src={hamburger}
@@ -41,14 +41,6 @@ export default function Header({ setOpenMobileSidebar }) {
           className="lg:hidden xs:block cursor-pointer"
           onClick={() => setOpenMobileSidebar(true)}
         />
-      <div className=" font-medium text-left text-[#000] text-2xl xs:hidden lg:block">
-          {
-            location.pathname === "/create-campaign/photo-contest" ? "Photo Contest" :
-            location.pathname === "/create-campaign/video-contest" ? "Video Contest" :
-            location.pathname === "/create-campaign/essay-contest" ? "Essay Contest" :
-            location.pathname === "/create-campaign/visual-hackathon" ? "Visual Hackathon" : null
-          }
-      </div>
       </div>
       <div className="flex gap-4 items-center">
   
@@ -67,7 +59,7 @@ export default function Header({ setOpenMobileSidebar }) {
           onClick={handleClick}
         >
           <p className="text-sm font-bold text-[#101828]">Sigflow</p>
-          <p>{`${userData?.first_name} ${userData?.last_name}`}</p>
+          <p className="text-[#828282] text-sm">{`${userData?.first_name} ${userData?.last_name}`}</p>
         </div>
         <Menu
           id="header-menu"

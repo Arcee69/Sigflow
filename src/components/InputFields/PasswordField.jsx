@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { AiFillEye, AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 export default function PasswordField({
   labelName,
@@ -34,12 +34,12 @@ export default function PasswordField({
         />
         <div className="absolute inset-y-0 right-0 pr-3 mt-1.5 flex items-center">
           {showPassword ? (
-            <AiFillEyeInvisible
+            <AiOutlineEye
               className="h-5 w-5 text-gray-500 cursor-pointer"
               onClick={togglePasswordVisibility}
             />
           ) : (
-            <AiFillEye
+            <AiOutlineEyeInvisible
               className="h-5 w-5 text-gray-500 cursor-pointer"
               onClick={togglePasswordVisibility}
             />
