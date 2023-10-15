@@ -50,7 +50,7 @@ const columns = [
         accessor: "status" 
     },
     { 
-        Header: "Action", 
+        Header: "", 
         accessor: "action" 
     },
   ]
@@ -97,7 +97,7 @@ const Dashboard = () => {
             </div>
         </div>
         <div className='flex md:justify-end mt-5'>
-            <input type='text' placeholder='Search' className='border-[#E6E7EC] border-r-0 border-solid border rounded-tl-lg rounded-bl-lg p-2 w-[320px]' />
+            <input type='text' placeholder='Search Information' className='border-[#E6E7EC] border-r-0 border-solid border rounded-tl-lg rounded-bl-lg p-2 w-[320px]' />
             <img src={Search} className='bg-[#fff] px-2 mr-2 rounded-tr-lg border-l-0 border-[#E6E7EC] border-solid border rounded-br-lg'/>
         </div>
 
